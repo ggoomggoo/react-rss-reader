@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import xml2js from 'xml2js';
 
 import UrlInput from "./UrlInput";
 import Table from './Table'
@@ -20,9 +21,12 @@ class RssViewer extends Component {
 
         axios.get(url)
             .then(function(response) {
+                const data = response.data
                 debugger;
-
-        });
+                xml2js.parseString(data, function(error, result) {
+                    debugger;
+                }.bind(this));
+        }.bind(this));
         debugger;
     }
     
