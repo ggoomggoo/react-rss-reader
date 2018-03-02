@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Table from './components/Table'
+import RssViewer from './components/RssViewer';
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to Web RSS Reader</h1>
         </header>
-        <Table></Table>
+          <RssViewer />
       </div>
     );
   }
