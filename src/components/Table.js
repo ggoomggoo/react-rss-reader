@@ -12,6 +12,12 @@ class Table extends Component {
         };
     }
 
+    renderTableRows() {
+        return this.state.rss.rss.channel.item.map(function(row) {
+            return <TableRow data={row} />
+        })
+    }
+
     render() {
         return (
             <div>
@@ -21,13 +27,11 @@ class Table extends Component {
                             <th>title</th>
                             <th>link</th>
                             <th>description</th>
-                            <th>pubdate</th>
+                            <th>pubDate</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <TableRow></TableRow>
-                        <TableRow></TableRow>
-                        <TableRow></TableRow>
+                        {this.renderTableRows()}
                     </tbody>
                     <tfoot></tfoot>
                 </table>

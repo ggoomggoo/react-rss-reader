@@ -9,10 +9,10 @@ class TableRow extends Component {
         return (
             <React.Fragment>
                 <tr>
-                    <td>title</td>
-                    <td>link</td>
-                    <td>description</td>
-                    <td>pubdate</td>
+                    <td>{this.props.data.title}</td>
+                    <td>{this.props.data.link}</td>
+                    <td>{this.props.data.description}</td>
+                    <td>{this.props.data.pubDate}</td>
                 </tr>
             </React.Fragment>
         );
