@@ -10,11 +10,14 @@ Web RSS Reader (create-react-app based)
 * Render List
 * Add Bookmark
 
-## Execution
+## Usage
 
 ```bash
+$ npm install
 $ npm start
 ```
+
+[http://localhost:3000/](http://localhost:3000/)
 
 ## License
 
