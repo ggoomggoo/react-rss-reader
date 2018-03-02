@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 
+import rss from '../json/rss.json'
+
 class Table extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            rss: rss
+        };
+    }
+
     render() {
         return (
             <div>
