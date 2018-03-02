@@ -24,6 +24,7 @@ class Table extends Component {
                 <table>
                     <thead>
                         <tr>
+                            <th>#</th>
                             <th>title</th>
                             <th>link</th>
                             <th>description</th>
