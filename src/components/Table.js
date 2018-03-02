@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import TableRow from './TableRow'
+
 import rss from '../json/rss.json'
 
 class Table extends Component {
@@ -23,18 +25,9 @@ class Table extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>title</td>
-                            <td>link</td>
-                            <td>description</td>
-                            <td>pubdate</td>
-                        </tr>
-                        <tr>
-                            <td>title</td>
-                            <td>link</td>
-                            <td>description</td>
-                            <td>pubdate</td>
-                        </tr>
+                        <TableRow></TableRow>
+                        <TableRow></TableRow>
+                        <TableRow></TableRow>
                     </tbody>
                     <tfoot></tfoot>
                 </table>
